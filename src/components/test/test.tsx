@@ -6,7 +6,7 @@ import './test.less'
 interface IProps {}
 interface IState {}
 
-export default class Timer extends Component<IProps, IState> {
+export default class Test extends Component<IProps, IState> {
 
   render () {
     return (
