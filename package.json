@@ -57,5 +57,9 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-taro": "1.2.22",
     "typescript": "^3.0.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/nordon-wang/hb-market/issues"
+  },
+  "homepage": "https://github.com/nordon-wang/hb-market#readme"
 }
