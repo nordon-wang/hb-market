@@ -1,6 +1,6 @@
 {
   "name": "hb-market",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "description": "营销",
   "main": "dist/index.js",
