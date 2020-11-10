@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "hbHitchMarket",
+  "projectname": "hb-market",
   "description": "营销",
   "appid": "touristappid",
   "setting": {

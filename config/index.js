@@ -2,7 +2,7 @@
 const path = require('path')
 
 const config = {
-  projectName: 'hbHitchMarket',
+  projectName: 'hb-market',
   date: '2020-11-10',
   designWidth: 750,
   deviceRatio: {
