@@ -1,17 +1,17 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 
-import './test.less'
+import './foo.less'
 
 interface IProps {}
 interface IState {}
 
-export default class Test extends Component<IProps, IState> {
+export default class Foo extends Component<IProps, IState> {
 
   render () {
     return (
-      <View className='timer'>
-        <Text>'aaaa'</Text>
+      <View className='foo'>
+        <Text>Foo 组件测试</Text>
       </View>
     )
   }

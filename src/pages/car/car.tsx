@@ -2,9 +2,9 @@ import { ComponentType } from 'react'
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
-import  Test from "../../components/test/test";
+import  Foo from "../../components/foo/foo";
 
-import './index.less'
+import './car.less'
 
 type PageStateProps = {
   counterStore: {
@@ -31,13 +31,12 @@ class Index extends Component {
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
   config: Config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: 'car'
   }
 
   componentWillMount () { }
 
   componentWillReact () {
-    console.log('componentWillReact')
   }
 
   componentDidMount () { }
@@ -48,45 +47,21 @@ class Index extends Component {
 
   componentDidHide () { }
 
-  increment = () => {
-    const { counterStore } = this.props
-    counterStore.increment()
-  }
-
-  decrement = () => {
-    const { counterStore } = this.props
-    counterStore.decrement()
-  }
-
-  incrementAsync = () => {
-    const { counterStore } = this.props
-    counterStore.incrementAsync()
-  }
-
-  goToCar = () => {
+  goToIndx = () => {
+    console.log('go to index');
+    // Navigator
     Taro.navigateTo({
-      url: "/pages/car/car"
+      url: '/pages/index/index'
     })
   }
 
   render () {
-    const { counterStore: { counter } } = this.props
     return (
       <View>
-        <View>
-          <Test />
-        </View>
-
+        <Foo />
         <Button 
           plain type='primary'
-          onClick={this.goToCar}>go to car</Button>
-
-        <View className='index'>
-          <Button onClick={this.increment}>+</Button>
-          <Button onClick={this.decrement}>-</Button>
-          <Button onClick={this.incrementAsync}>Add Async</Button>
-          <Text>{counter}</Text>
-        </View>
+          onClick={this.goToIndx}>go to index</Button>
       </View>
     )
   }
